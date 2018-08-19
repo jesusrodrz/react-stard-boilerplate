@@ -18,12 +18,13 @@ module.exports = {
     filename: 'js/[name].js'
   },
 
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    port: 9000,
-    hot: true,
-    host: '127.0.0.1'
-  },
+  // devServer: {
+  //   contentBase: path.join(__dirname, 'dist'),
+  //   port: 9000,
+  //   watchContentBase: true,
+  //   hot: true,
+  //   host: '127.0.0.1'
+  // },
 
   module: {
     rules: [
@@ -31,7 +32,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {

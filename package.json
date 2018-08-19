@@ -19,11 +19,13 @@
     "webpack-cli": "^3.1.0"
   },
   "scripts": {
-    "watch:dev": "webpack --mode development --watch --colors --progress"
+    "watch:dev": "webpack --mode development --watch --colors --progress",
+    "start": "webpack-dev-server --mode development --watch --colors --progress"
   },
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "sass-resources-loader": "^1.3.3"
+    "sass-resources-loader": "^1.3.3",
+    "webpack-dev-server": "^3.1.5"
   }
 }
