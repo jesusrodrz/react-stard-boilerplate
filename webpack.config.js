@@ -17,6 +17,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js'
   },
+
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    port: 9000
+  }
+
   module: {
     rules: [
       {
