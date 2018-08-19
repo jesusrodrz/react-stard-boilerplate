@@ -53,7 +53,7 @@ module.exports = {
       filename: 'css/[name].css',
     }),
     ...views.pages({
-      srcDir: './src',
+      srcDir: './src/views',
       filesExt:'html'
     }) 
   ]
