@@ -1,16 +1,15 @@
 import React,{ Component, ReactPropTypes } from 'react';
-import './../sass/styles.scss'
+
 
 class App extends Component {
-  contructor(...props) {
+  constructor (...props) {
     super(...props)
 
-    
     this.state = {
 
     }
   }
-
+  
   render() {
     return (
       <div>React App</div>
