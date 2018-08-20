@@ -5,9 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 exports.pages = function (options) {
 
   const files = fs.readdirSync(options.srcDir)
-  console.log(...files)
+  
   const pages = files.filter((fileName) => fileName.indexOf('.' + options.filesExt) != -1).map(fileName => {
-    console.log(fileName+' - '+ `${fileName.split('.')[0]}.html - ` + ` - ${options.srcDir}/${fileName}`)
+
     const optionsPlugin = {
       filename: `${fileName.split('.')[0]}.html`,
       template: `${options.srcDir}/${fileName}`,

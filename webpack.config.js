@@ -19,13 +19,11 @@ module.exports = {
   },
 
   // devServer: {
-  //   contentBase: path.join(__dirname, 'dist'),
-  //   port: 9000,
-  //   watchContentBase: true,
+  //   // contentBase: path.join(__dirname, 'dist'),
   //   hot: true,
-  //   host: '127.0.0.1'
+  //   open: true
   // },
-
+  mode:'development',
   module: {
     rules: [
       {
@@ -48,7 +46,8 @@ module.exports = {
           'sass-loader'
         ]
 
-      },
+      }
+      ,
       {
         test: /\.html$/,
         use: [

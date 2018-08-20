@@ -12,7 +12,7 @@ class App extends Component {
   
   render() {
     return (
-      <div>React App</div>
+      <div className='App' >React App</div>
     )  
   }
   
